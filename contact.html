@@ -1,17 +1,14 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Contact - 2EH Consulting</title>
     <style>
-      body, html {
+      body {
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        min-height: 100%;
-        font-family: Arial, sans-serif;
-        background-color: white;
-        color: black;
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
       }
 
       header {
@@ -20,6 +17,12 @@
         align-items: center;
         background-color: black;
         padding: 20px;
+      }
+
+      .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
       }
 
       nav a {
@@ -34,21 +37,24 @@
       }
 
       main {
-        flex: 1;
         padding: 40px;
+        flex: 1;
+        background-color: white;
+        color: black;
       }
 
       footer {
         background-color: black;
         color: white;
         text-align: center;
-        padding: 10px;
+        padding: 40px 10px;
+        margin-top: auto;
       }
     </style>
   </head>
   <body>
     <header>
-      <div style="color: white; font-size: 24px; font-weight: bold;">Contact</div>
+      <div class="logo">2EH Consulting</div>
       <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Our Services</a>
@@ -56,14 +62,13 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-
     <main>
       <h2>Contact Us</h2>
       <p>Email: yourdad@email.com</p>
     </main>
-
     <footer>
       <p>&copy; 2025 2EH Consulting</p>
     </footer>
   </body>
 </html>
+
