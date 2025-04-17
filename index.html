@@ -16,16 +16,14 @@
     header {
       display: flex;
       align-items: center;
-      position: relative;
       height: 80px;
       padding: 0 20px;
-      background-color: black;
+      background-color: white;
     }
 
-    /* Left section with logo */
+    /* Left section with 30% white for the logo */
     .logo-container {
-      flex: 0 0 auto;
-      width: 120px; /* Smaller logo */
+      flex: 0 0 30%; /* 30% width */
       display: flex;
       justify-content: flex-start;
     }
@@ -35,13 +33,20 @@
       height: auto;
     }
 
-    /* Right section with navigation links */
+    /* Right section with 70% black for the navigation */
+    .nav-container {
+      flex: 1; /* Take the remaining space */
+      background-color: black;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+    }
+
     .nav-links {
       display: flex;
       gap: 20px;
-      margin-left: auto; /* Aligns the links to the right */
-      justify-content: flex-end;
-      width: auto;
+      margin-right: 20px;
     }
 
     .nav-links a {
@@ -108,17 +113,19 @@
 </head>
 <body>
 
-  <!-- Header with logo and navigation -->
+  <!-- Header with logo (30% white) and navigation (70% black) -->
   <header>
     <div class="logo-container">
       <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo" class="logo">
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Our Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Our Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Image Section -->
