@@ -1,127 +1,141 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>2EH Consulting</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: white;
-        color: black;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2EH Consulting</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        padding: 10px 30px;
-        border-bottom: 2px solid black;
-      }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      background-color: black;
+      position: relative;
+    }
 
-      .logo img {
-        height: 60px;
-      }
+    .logo-container {
+      background-color: white;
+      width: 30%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
 
-      nav {
-        position: relative;
-      }
+    .logo {
+      max-width: 100%;
+      height: auto;
+    }
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      background-color: black;
+      width: 70%;
+      justify-content: flex-start;
+      padding: 0 20px;
+    }
 
-      .dropbtn {
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
-      }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        right: 0;
-        background-color: white;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-        z-index: 1;
-        border: 1px solid #ddd;
-      }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 30%;
+      width: 70%;
+      height: 100%;
+      background: black;
+      transform: skewY(-10deg);
+      transform-origin: top right;
+      z-index: -1;
+    }
 
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+    /* Hero Section */
+    .hero {
+      height: 75vh;
+      background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      position: relative;
+    }
 
-      .dropdown-content a:hover {
-        background-color: #f1f1f1;
-      }
+    .intro {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+    .intro h2 {
+      font-size: 32px;
+      margin: 0;
+    }
 
-      .dropdown:hover .dropbtn {
-        background-color: #333;
-      }
+    .intro p {
+      font-size: 18px;
+      margin: 10px 0 0;
+    }
 
-      .hero {
-        height: 60vh;
-        background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
-        background-size: cover;
-      }
+    /* Footer */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      position: relative;
+    }
 
-      .intro {
-        padding: 40px 30px;
-        font-size: 20px;
-        line-height: 1.6;
-        max-width: 1000px;
-        margin: 0 auto;
-      }
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
 
-      footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 40px 20px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
-      </div>
-      <nav class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Our Services</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <div class="hero"></div>
-
-    <div class="intro">
-      <p><strong>2EH Consulting</strong> is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.</p>
+  <!-- Header with logo and navigation -->
+  <header>
+    <div class="logo-container">
+      <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo" class="logo">
     </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Our Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <footer>
-      <p>&copy; 2025 2EH Consulting</p>
-    </footer>
-  </body>
+  <!-- Hero Image Section -->
+  <div class="hero">
+    <div class="intro">
+      <h2>Welcome to 2EH Consulting</h2>
+      <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 2EH Consulting</p>
+  </footer>
+
+</body>
 </html>
