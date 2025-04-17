@@ -1,101 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>2EH Consulting</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: white;
-      color: black;
-    }
+  <head>
+    <title>2EH Consulting</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-    .top-section {
-      position: relative;
-      width: 100%;
-      height: 50vh; /* Image only takes up top half */
-      background-image: url('YOUR_IMAGE_URL_HERE'); /* ← CHANGE this part */
-      background-size: cover;
-      background-position: center;
-    }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: black;
+        padding: 20px;
+        position: relative;
+      }
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 40px;
-      font-size: 32px;
-      color: white;
-      font-weight: bold;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
+      .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
 
-    nav {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-    }
+      nav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 8px 12px;
-      border-radius: 5px;
-    }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+      }
 
-    nav a:hover {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
+      .hero {
+        height: 300px;
+        background: url('https://example.com/building-image.jpg') no-repeat center center;
+        background-size: cover;
+        width: 50%;
+        float: right;
+      }
 
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
+      main {
+        padding: 40px;
+        clear: both;
+      }
 
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
-</head>
-<body>
+      section {
+        margin-bottom: 40px;
+      }
 
-  <div class="top-section">
-    <div class="logo">2EH Consulting</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <p>Planning, strategy, and project advice.</p>
-  </section>
+    <header>
+      <div class="logo">2EH Consulting</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Over 20 years of experience helping build smarter cities and communities.</p>
-  </section>
+    <div class="hero"></div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourdad@email.com</p>
-  </section>
+    <main>
+      <section id="services">
+        <h2>Our Services</h2>
+        <p>Planning, strategy, and project advice.</p>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 2EH Consulting</p>
-  </footer>
+      <section id="about">
+        <h2>About</h2>
+        <p>Over 20 years of experience helping build smarter cities and communities.</p>
+      </section>
 
-</body>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: yourdad@email.com</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 2EH Consulting</p>
+    </footer>
+
+  </body>
 </html>
