@@ -18,15 +18,16 @@
       align-items: center;
       position: relative;
       height: 80px;
+      padding: 0 20px;
+      background-color: black;
     }
 
-    /* Left white section with logo */
+    /* Left section with logo */
     .logo-container {
-      background-color: white;
-      width: 30%;
-      padding: 10px;
+      flex: 0 0 auto;
+      width: 120px; /* Smaller logo */
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .logo {
@@ -34,15 +35,13 @@
       height: auto;
     }
 
-    /* Right black section with navigation links */
+    /* Right section with navigation links */
     .nav-links {
       display: flex;
       gap: 20px;
-      background-color: black;
-      width: 70%;
-      justify-content: flex-start;
-      padding: 0 20px;
-      position: relative;
+      margin-left: auto; /* Aligns the links to the right */
+      justify-content: flex-end;
+      width: auto;
     }
 
     .nav-links a {
@@ -50,20 +49,6 @@
       color: white;
       font-weight: bold;
       font-size: 18px;
-    }
-
-    /* Slanted line between white and black sections */
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 30%;
-      width: 70%;
-      height: 100%;
-      background: black;
-      transform: skewY(10deg);
-      transform-origin: top left;
-      z-index: -1;
     }
 
     /* Hero Section */
