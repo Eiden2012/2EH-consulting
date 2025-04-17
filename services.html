@@ -1,90 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Our Services | 2EH Consulting</title>
+  <title>2EH Consulting - Services</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
-    }
-
-    body {
       min-height: 100vh;
     }
 
     header {
-      display: flex;
       width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 150px;
     }
 
-    .header-left {
-      width: 20%;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .header-left img {
+    header img {
       height: 50px;
-      width: auto;
       transform: scale(3);
     }
 
-    .header-right {
-      width: 80%;
-      background-color: black;
+    .main-content {
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding-right: 30px;
+      flex: 1;
     }
 
-    .header-right a {
-      color: white;
+    .sidebar {
+      width: 200px;
+      background-color: white;
+      border-left: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 10px;
+      align-items: flex-start;
+    }
+
+    .sidebar a {
+      color: #FFD700;
       text-decoration: none;
-      margin-left: 30px;
+      margin: 10px 0;
       font-size: 16px;
     }
 
-    .header-right a:hover {
+    .sidebar a:hover {
       text-decoration: underline;
     }
 
     .content-section {
+      flex: 1;
       background-color: white;
       padding: 30px 40px;
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .service-text {
-      max-width: 500px;
       font-size: 18px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
     }
 
-    .service-text ul {
-      text-align: left;
-      padding-left: 20px;
-    }
-
-    .service-image {
-      max-width: 500px;
-    }
-
-    .service-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
+    .content-section img {
+      width: 50%;
+      border-radius: 10px;
     }
 
     footer {
@@ -99,31 +78,24 @@
 <body>
 
 <header>
-  <div class="header-left">
-    <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Logo">
+  <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Logo">
+</header>
+
+<div class="main-content">
+  <div class="content-section">
+    <div>
+      <h2>Our Services</h2>
+      <p>We offer LGIP review and preparation, infrastructure planning, data analysis, GIS mapping, and urban modelling tailored to local government needs. We ensure long-term community benefits and sustainable infrastructure growth.</p>
+    </div>
+    <img src="https://environment.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2023-02/NA1442_shutterstock_355734689.jpg?itok=4nZas8Br" alt="Service Infrastructure">
   </div>
-  <div class="header-right">
+
+  <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Our Services</a>
+    <a href="our-people.html">Our People</a>
     <a href="contact.html">Contact</a>
-  </div>
-</header>
-
-<div class="content-section">
-  <div class="service-text">
-    <h1>Our Services</h1>
-    <ul>
-      <li>Strategic Infrastructure Planning</li>
-      <li>Local Government Infrastructure Plans (LGIPs)</li>
-      <li>Urban Growth & Land Use Modelling</li>
-      <li>Infrastructure Funding Frameworks</li>
-      <li>Development Sequencing & Prioritisation</li>
-      <li>Multidisciplinary Project Management</li>
-    </ul>
-  </div>
-  <div class="service-image">
-    <img src="https://environment.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2023-02/NA1442_shutterstock_355734689.jpg?itok=4nZas8Br" alt="Planning Image">
   </div>
 </div>
 
