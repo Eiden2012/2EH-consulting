@@ -28,32 +28,35 @@
         text-decoration: underline;
       }
 
-      header {
-        background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a'); /* Building image */
+      .header-container {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+      }
+
+      .header-image {
+        background-image: url("afe6c823-69fd-4705-a821-2b1db6c03738.png");
         background-size: cover;
         background-position: center;
-        color: white;
-        padding: 100px 40px 100px 40px;
-        text-align: left;
+        flex: 3;
         position: relative;
       }
 
-      header h1 {
-        margin: 0;
-        font-size: 48px;
+      .header-image h1 {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 36px;
         background-color: rgba(0, 0, 0, 0.6);
-        display: inline-block;
+        color: white;
         padding: 10px 20px;
         border-radius: 8px;
+        margin: 0;
       }
 
-      header p {
-        font-size: 20px;
-        margin-top: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 8px;
+      .header-side {
+        flex: 1;
+        background-color: #000;
       }
 
       section {
@@ -78,10 +81,12 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <header>
-      <h1>2EH Consulting</h1>
-      <p>Expert help for big infrastructure projects</p>
-    </header>
+    <div class="header-container">
+      <div class="header-image">
+        <h1>2EH Consulting</h1>
+      </div>
+      <div class="header-side"></div>
+    </div>
 
     <section id="services">
       <h2>Our Services</h2>
