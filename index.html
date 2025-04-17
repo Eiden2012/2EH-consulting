@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2EH Consulting</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background-color: white;
-      color: black;
     }
 
     header {
       display: flex;
-      height: 150px;
       width: 100%;
+      height: 150px;
     }
 
     .header-left {
@@ -25,12 +20,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px;
     }
 
     .header-left img {
-      height: 50px;
+      height: 150px;
       width: auto;
+      transform: scale(3); /* 300% size */
     }
 
     .header-right {
@@ -57,24 +52,13 @@
       height: 75vh;
       background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
       background-size: cover;
-      position: relative;
-    }
-
-    .intro {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 20px;
-      text-align: center;
     }
 
     .content-section {
-      padding: 30px 40px;
       background-color: white;
-      font-size: 18px;
+      padding: 30px 40px;
       text-align: center;
+      font-size: 18px;
     }
 
     footer {
@@ -88,34 +72,29 @@
 </head>
 <body>
 
-  <header>
-    <div class="header-left">
-      <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
-    </div>
-    <div class="header-right">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Our Services</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </header>
-
-  <div class="hero">
-    <div class="intro">
-      <h2>Welcome to 2EH Consulting</h2>
-      <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
-    </div>
+<header>
+  <div class="header-left">
+    <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Logo">
   </div>
-
-  <div class="content-section">
-    <p>
-      2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
-    </p>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Our Services</a>
+    <a href="contact.html">Contact</a>
   </div>
+</header>
 
-  <footer>
-    <p>&copy; 2025 2EH Consulting</p>
-  </footer>
+<div class="hero"></div>
+
+<div class="content-section">
+  <p>
+    2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
+  </p>
+</div>
+
+<footer>
+  <p>&copy; 2025 2EH Consulting</p>
+</footer>
 
 </body>
 </html>
