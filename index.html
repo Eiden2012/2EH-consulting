@@ -1,119 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>2EH Consulting</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white; /* 60% white */
-        color: black;
-      }
+<head>
+  <title>2EH Consulting</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+    }
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black; /* 30% black */
-        padding: 20px;
-        height: 100px; /* Increased height of the header */
-      }
+    /* HEADER */
+    header {
+      display: flex;
+      height: 120px; /* Taller header */
+      width: 100%;
+    }
 
-      .logo {
-        flex: 0 0 30%; /* 30% of the width for the logo */
-        text-align: left;
-      }
+    .header-left {
+      width: 20%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
 
-      .logo img {
-        height: 5%; /* Adjust logo size to 5% */
-        width: auto;
-      }
+    .header-left img {
+      height: 50px;
+      width: auto;
+    }
 
-      nav {
-        flex: 1;
-        text-align: right; /* Right-align the navigation items */
-      }
+    .header-right {
+      width: 80%;
+      background-color: black;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 30px;
+    }
 
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 16px;
-      }
+    .header-right a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+    }
 
-      nav a:hover {
-        text-decoration: underline;
-      }
+    .header-right a:hover {
+      text-decoration: underline;
+    }
 
-      /* Hero image section with a gap at the bottom */
-      .hero {
-        height: 75vh; /* 75% of the viewport height */
-        background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
-        background-size: cover;
-        width: 100%;
-        position: relative;
-      }
+    /* HERO IMAGE */
+    .hero {
+      height: 75vh;
+      background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
 
-      /* Introduction section */
-      .intro {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.6); /* Dark background for text readability */
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
+    .intro {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-      /* Content section between photo and footer */
-      .content-section {
-        padding: 20px;
-        background-color: white;
-        color: black;
-        text-align: center;
-        font-size: 18px;
-      }
+    /* CONTENT BETWEEN HERO AND FOOTER */
+    .content-section {
+      padding: 30px 40px;
+      background-color: white;
+      font-size: 18px;
+      text-align: center;
+    }
 
-      footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 10px;
-      }
-    </style>
-  </head>
-  <body>
+    /* FOOTER */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      position: relative;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
 
-    <header>
-      <div class="logo">
-        <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
-      </div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Our Services</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-
-    <!-- Hero image with space for text -->
-    <div class="hero">
-      <div class="intro">
-        <h2>Welcome to 2EH Consulting</h2>
-        <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
-      </div>
+  <header>
+    <div class="header-left">
+      <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
     </div>
-
-    <!-- Content Section Between Photo and Footer -->
-    <div class="content-section">
-      <p>2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.</p>
+    <div class="header-right">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Our Services</a>
+      <a href="#">Contact</a>
     </div>
+  </header>
 
-    <footer>
-      <p>&copy; 2025 2EH Consulting</p>
-    </footer>
+  <div class="hero">
+    <div class="intro">
+      <h2>Welcome to 2EH Consulting</h2>
+      <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
+    </div>
+  </div>
 
-  </body>
+  <div class="content-section">
+    <p>
+      2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 2EH Consulting</p>
+  </footer>
+
+</body>
 </html>
