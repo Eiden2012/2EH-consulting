@@ -1,73 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About - 2EH Consulting</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
       background-color: white;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      color: black;
     }
 
     header {
       display: flex;
-      justify-content: space-between;
+      height: 150px;
+      width: 100%;
+    }
+
+    .header-left {
+      width: 20%;
+      background-color: white;
+      display: flex;
       align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .header-left img {
+      height: 150px;
+      width: auto;
+    }
+
+    .header-right {
+      width: 80%;
       background-color: black;
-      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 30px;
     }
 
-    .logo img {
-      height: 40px;
-    }
-
-    nav a {
+    .header-right a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 30px;
       font-size: 16px;
     }
 
-    nav a:hover {
+    .header-right a:hover {
       text-decoration: underline;
     }
 
-    .content {
+    .content-section {
       padding: 40px;
-      flex: 1;
+      font-size: 18px;
+      text-align: center;
     }
 
     footer {
       background-color: black;
       color: white;
       text-align: center;
-      padding: 30px;
+      padding: 30px 20px;
+      width: 100%;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">
+    <div class="header-left">
       <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
     </div>
-    <nav>
+    <div class="header-right">
       <a href="index.html">Home</a>
+      <a href="#">About</a>
       <a href="services.html">Our Services</a>
-      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-    </nav>
+    </div>
   </header>
 
-  <div class="content">
-    <h1>About Us</h1>
-    <p>With over 20 years of experience, we specialize in urban development, infrastructure planning, and environmental sustainability. Our mission is to build smarter cities and communities that thrive for generations to come.</p>
+  <div class="content-section">
+    <h2>About Us</h2>
+    <p>
+      At 2EH Consulting, we bring deep expertise in strategic planning, infrastructure delivery, and local government partnerships.
+      Our team is dedicated to delivering innovative, practical, and sustainable solutions tailored to the needs of growing communities.
+    </p>
   </div>
 
   <footer>
