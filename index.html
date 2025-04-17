@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>2EH Consulting</title>
+  <title>2EH Consulting - Home</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
-      display: flex;
       width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 150px;
     }
 
-    .header-left {
-      width: 20%;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .header-left img {
+    header img {
       height: 50px;
-      width: auto;
-      transform: scale(3); /* 300% size */
+      transform: scale(3);
     }
 
-    .header-right {
-      width: 80%;
-      background-color: black;
+    .main-content {
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding-right: 30px;
+      flex: 1;
     }
 
-    .header-right a {
-      color: white;
+    .sidebar {
+      width: 200px;
+      background-color: white;
+      border-left: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      padding: 30px 10px;
+      align-items: flex-start;
+    }
+
+    .sidebar a {
+      color: #FFD700;
       text-decoration: none;
-      margin-left: 30px;
+      margin: 10px 0;
       font-size: 16px;
     }
 
-    .header-right a:hover {
+    .sidebar a:hover {
       text-decoration: underline;
     }
 
-    .hero {
-      height: 75vh;
-      background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
-      background-size: cover;
-    }
-
     .content-section {
+      flex: 1;
       background-color: white;
       padding: 30px 40px;
-      text-align: center;
       font-size: 18px;
     }
 
@@ -73,23 +70,24 @@
 <body>
 
 <header>
-  <div class="header-left">
-    <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Logo">
+  <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Logo">
+</header>
+
+<div class="main-content">
+  <div class="content-section">
+    <h2>Welcome to 2EH Consulting</h2>
+    <p>
+      2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
+    </p>
   </div>
-  <div class="header-right">
+
+  <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Our Services</a>
+    <a href="our-people.html">Our People</a>
     <a href="contact.html">Contact</a>
   </div>
-</header>
-
-<div class="hero"></div>
-
-<div class="content-section">
-  <p>
-    2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
-  </p>
 </div>
 
 <footer>
