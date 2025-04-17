@@ -16,7 +16,7 @@
     header {
       display: flex;
       align-items: center;
-      height: 80px;
+      height: 80px; /* Adjusted header height */
       padding: 0 20px;
       background-color: white;
     }
@@ -26,12 +26,13 @@
       flex: 0 0 30%; /* 30% width */
       display: flex;
       justify-content: flex-start;
+      align-items: center;
     }
 
-    /* Smaller logo that fits properly */
+    /* Logo adjusted to 20% of header height */
     .logo {
-      width: 50%; /* Adjusted to 50% of the container */
-      height: auto;
+      height: 20%; /* Adjusted logo height to 20% */
+      width: auto; /* Maintain aspect ratio */
     }
 
     /* Right section with 70% black for the navigation */
