@@ -59,9 +59,32 @@
     .content-section {
       background-color: white;
       padding: 30px 40px;
-      text-align: center;
-      font-size: 18px;
       flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-text {
+      max-width: 500px;
+      font-size: 18px;
+    }
+
+    .service-text ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .service-image {
+      max-width: 500px;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
 
     footer {
@@ -88,15 +111,20 @@
 </header>
 
 <div class="content-section">
-  <h1>Our Services</h1>
-  <ul style="text-align:left; max-width: 600px; margin: auto;">
-    <li>Strategic Infrastructure Planning</li>
-    <li>Local Government Infrastructure Plans (LGIPs)</li>
-    <li>Urban Growth & Land Use Modelling</li>
-    <li>Infrastructure Funding Frameworks</li>
-    <li>Development Sequencing & Prioritisation</li>
-    <li>Multidisciplinary Project Management</li>
-  </ul>
+  <div class="service-text">
+    <h1>Our Services</h1>
+    <ul>
+      <li>Strategic Infrastructure Planning</li>
+      <li>Local Government Infrastructure Plans (LGIPs)</li>
+      <li>Urban Growth & Land Use Modelling</li>
+      <li>Infrastructure Funding Frameworks</li>
+      <li>Development Sequencing & Prioritisation</li>
+      <li>Multidisciplinary Project Management</li>
+    </ul>
+  </div>
+  <div class="service-image">
+    <img src="https://environment.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2023-02/NA1442_shutterstock_355734689.jpg?itok=4nZas8Br" alt="Planning Image">
+  </div>
 </div>
 
 <footer>
