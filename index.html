@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>2EH Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Lora', serif, 'Roboto', sans-serif; /* Calm, professional fonts */
         margin: 0;
         padding: 0;
         background-color: white; /* 60% white */
@@ -30,6 +31,7 @@
         text-decoration: none;
         margin-left: 20px;
         font-size: 16px;
+        font-weight: 500;
       }
 
       nav a:hover {
@@ -57,6 +59,24 @@
         text-align: center;
       }
 
+      /* Section styling for Services, About, Contact */
+      section {
+        padding: 40px;
+        margin: 40px 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      section h2 {
+        color: #E1C16E; /* Mustard Yellow */
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      section p {
+        font-weight: 400;
+        line-height: 1.6;
+      }
+
       footer {
         background-color: black;
         color: white;
@@ -70,6 +90,7 @@
     <header>
       <div class="logo">2EH Consulting</div>
       <nav>
+        <a href="#">Home</a>
         <a href="#">Services</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
@@ -83,6 +104,24 @@
         <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
       </div>
     </div>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>At 2EH Consulting, we offer tailored planning, strategy, and project advice to create sustainable solutions for communities. Our approach is collaborative, ensuring that all stakeholders are engaged in the process.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>With over 20 years of experience, we specialize in providing comprehensive services for urban development, infrastructure planning, and environmental sustainability. Our mission is to build smarter cities and communities that thrive for generations to come.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: yourdad@email.com</p>
+    </section>
 
     <footer>
       <p>&copy; 2025 2EH Consulting</p>
