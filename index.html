@@ -1,152 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2EH Consulting</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: white;
-    }
+<html>
+  <head>
+    <title>2EH Consulting</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white; /* 60% white */
+        color: black;
+      }
 
-    /* Header */
-    header {
-      display: flex;
-      align-items: center;
-      height: 80px; /* Adjusted header height */
-      padding: 0 20px;
-      background-color: white;
-    }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black; /* 30% black */
+        padding: 20px;
+        height: 100px; /* Increased height of the header */
+      }
 
-    /* Left section with 30% white for the logo */
-    .logo-container {
-      flex: 0 0 30%; /* 30% width */
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
+      .logo img {
+        height: 5%; /* Adjust logo size to 5% */
+        width: auto;
+      }
 
-    /* Logo adjusted to 10% of header height */
-    .logo {
-      height: 5%; /* Adjusted logo height to 10% */
-      width: auto; /* Maintain aspect ratio */
-    }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+      }
 
-    /* Right section with 70% black for the navigation */
-    .nav-container {
-      flex: 1; /* Take the remaining space */
-      background-color: black;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 100%;
-    }
+      nav a:hover {
+        text-decoration: underline;
+      }
 
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      margin-right: 20px;
-    }
+      /* Hero image section with a gap at the bottom */
+      .hero {
+        height: 75vh; /* 75% of the viewport height */
+        background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+      }
 
-    .nav-links a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-    }
+      /* Introduction section */
+      .intro {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6); /* Dark background for text readability */
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
 
-    /* Hero Section */
-    .hero {
-      height: 75vh;
-      background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
-      background-size: cover;
-      width: 100%;
-      position: relative;
-    }
+      /* Content section between photo and footer */
+      .content-section {
+        padding: 20px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+      }
 
-    .intro {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
 
-    .intro h2 {
-      font-size: 32px;
-      margin: 0;
-    }
-
-    .intro p {
-      font-size: 18px;
-      margin: 10px 0 0;
-    }
-
-    /* Section for additional text between hero and footer (on a white background) */
-    .intro-text {
-      background-color: white;
-      padding: 30px;
-      text-align: center;
-      font-size: 18px;
-      color: black;
-    }
-
-    /* Footer */
-    footer {
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
-      position: relative;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 16px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header with logo (30% white) and navigation (70% black) -->
-  <header>
-    <div class="logo-container">
-      <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo" class="logo">
-    </div>
-    <div class="nav-container">
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Our Services</a>
-        <a href="contact.html">Contact</a>
+    <header>
+      <div class="logo">
+        <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Our Services</a>
+        <a href="#">Contact</a>
       </nav>
+    </header>
+
+    <!-- Hero image with space for text -->
+    <div class="hero">
+      <div class="intro">
+        <h2>Welcome to 2EH Consulting</h2>
+        <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
+      </div>
     </div>
-  </header>
 
-  <!-- Hero Image Section -->
-  <div class="hero">
-    <div class="intro">
-      <h2>Welcome to 2EH Consulting</h2>
-      <p>We help build smarter cities and sustainable communities with innovative planning and strategic advice.</p>
+    <!-- Content Section Between Photo and Footer -->
+    <div class="content-section">
+      <p>2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.</p>
     </div>
-  </div>
 
-  <!-- Additional Section Between Photo and Footer -->
-  <div class="intro-text">
-    <p>2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.</p>
-  </div>
+    <footer>
+      <p>&copy; 2025 2EH Consulting</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 2EH Consulting</p>
-  </footer>
-
-</body>
-<
+  </body>
+</html>
