@@ -59,9 +59,27 @@
     .content-section {
       background-color: white;
       padding: 30px 40px;
-      text-align: center;
-      font-size: 18px;
       flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      max-width: 500px;
+      font-size: 18px;
+    }
+
+    .about-image {
+      max-width: 500px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
 
     footer {
@@ -88,10 +106,18 @@
 </header>
 
 <div class="content-section">
-  <h1>About Us</h1>
-  <p>
-    At 2EH Consulting, we combine deep local government experience with technical rigour to support councils with growth planning, infrastructure funding frameworks, and implementation strategies that align with community needs and regional development goals.
-  </p>
+  <div class="about-text">
+    <h1>About 2EH Consulting</h1>
+    <p>
+      2EH Consulting is a boutique consultancy that offers expert strategic planning services for local governments. With years of experience, we specialize in a range of services designed to help councils tackle urban growth challenges, infrastructure planning, and development.
+    </p>
+    <p>
+      Our team brings a blend of technical expertise and hands-on project management to ensure our clients receive the best solutions. We aim to create sustainable communities through the development of smart, data-driven infrastructure systems.
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="https://www.mappedin.com/static/a01a95110f4469ac3800f26642401d4b/c3e2f/glass_buildings_view_from_street_e9208dec5f.webp" alt="About Image">
+  </div>
 </div>
 
 <footer>
