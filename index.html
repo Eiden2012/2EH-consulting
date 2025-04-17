@@ -4,91 +4,124 @@
     <title>2EH Consulting</title>
     <style>
       body {
-        font-family: "Segoe UI", Arial, sans-serif;
         margin: 0;
         padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: white;
         color: black;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
       }
 
       header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: white;
+        padding: 10px 30px;
+        border-bottom: 2px solid black;
+      }
+
+      .logo img {
+        height: 60px;
+      }
+
+      nav {
+        position: relative;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropbtn {
         background-color: black;
-        padding: 20px;
-      }
-
-      .logo {
         color: white;
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
+        padding: 10px 20px;
         font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
       }
 
-      nav a:hover {
-        text-decoration: underline;
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        border: 1px solid #ddd;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #333;
       }
 
       .hero {
         height: 60vh;
         background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
         background-size: cover;
-        width: 100%;
       }
 
-      .content {
-        flex-grow: 1;
-        padding: 50px 30px;
-        text-align: center;
+      .intro {
+        padding: 40px 30px;
+        font-size: 20px;
+        line-height: 1.6;
         max-width: 1000px;
         margin: 0 auto;
-        font-size: 24px;
-        line-height: 1.8;
       }
 
       footer {
         background-color: black;
         color: white;
         text-align: center;
-        padding: 40px;
-        margin-top: auto;
+        padding: 40px 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
       }
     </style>
   </head>
   <body>
-
     <header>
-      <a href="index.html" class="logo">2EH Consulting</a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Our Services</a>
-        <a href="contact.html">Contact</a>
+      <div class="logo">
+        <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
+      </div>
+      <nav class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Our Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </nav>
     </header>
 
     <div class="hero"></div>
 
-    <div class="content">
-      <p>
-        <strong>2EH Consulting</strong> is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
-      </p>
+    <div class="intro">
+      <p><strong>2EH Consulting</strong> is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.</p>
     </div>
 
     <footer>
       <p>&copy; 2025 2EH Consulting</p>
     </footer>
-
   </body>
 </html>
