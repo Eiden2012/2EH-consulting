@@ -12,6 +12,7 @@
       background-color: white;
     }
 
+    /* Header */
     header {
       display: flex;
       align-items: center;
@@ -50,6 +51,7 @@
       font-size: 18px;
     }
 
+    /* Slanted line between white and black parts */
     header::before {
       content: "";
       position: absolute;
@@ -58,8 +60,8 @@
       width: 70%;
       height: 100%;
       background: black;
-      transform: skewY(-10deg);
-      transform-origin: top right;
+      transform: skewY(10deg);
+      transform-origin: top left;
       z-index: -1;
     }
 
