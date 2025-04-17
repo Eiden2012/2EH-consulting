@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Home | 2EH Consulting</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: black;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: black;
-      padding: 10px 20px;
-    }
-    .logo img {
-      height: 50px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 16px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      height: 75vh;
-      background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
-      background-size: cover;
-      position: relative;
-    }
-    footer {
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-    }
-    .footer-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .footer-content img {
-      height: 40px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Our Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <title>2EH Consulting</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+      }
 
-  <div class="hero"></div>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 20px;
+      }
 
-  <footer>
-    <div class="footer-content">
-      <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="Footer Logo">
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        height: 75vh;
+        background: url('https://static.wixstatic.com/media/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg/v1/fill/w_2500,h_1404,al_c/873fa1_1e0b51d3e58f4e7aabe43ce20605c565~mv2.jpg') no-repeat center center;
+        background-size: cover;
+      }
+
+      .spacer {
+        height: 50px;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="color: white; font-size: 24px; font-weight: bold;">Home</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero"></div>
+    <div class="spacer"></div>
+
+    <footer>
       <p>&copy; 2025 2EH Consulting</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
