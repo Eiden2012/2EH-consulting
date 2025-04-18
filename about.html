@@ -1,84 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2EH Consulting - About</title>
+  <title>About - 2EH Consulting</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
     }
-    /* Sidebar */
+
+    header {
+      display: flex;
+      width: 100%;
+      height: 150px;
+    }
+
+    .header-left {
+      width: 20%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-left img {
+      height: 50px;
+      width: auto;
+      transform: scale(3); /* 300% size */
+    }
+
     .sidebar {
       width: 250px;
-      height: 100vh;
-      background-color: white;
       position: fixed;
       top: 0;
       left: 0;
-      padding: 20px;
-      font-size: 22px;
-      font-weight: bold;
-      color: black;
-    }
-    .sidebar a {
-      color: black;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-    /* Content Area */
-    .content {
-      margin-left: 260px;
-      padding: 20px;
-      flex-grow: 1;
-    }
-    /* Header */
-    .header {
       background-color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-      color: black;
+      padding-top: 20px;
     }
+
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+
+    .content-section {
+      margin-left: 270px;
+      padding: 30px 40px;
+      font-size: 20px;
+    }
+
     footer {
       background-color: black;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
+<header>
+  <div class="header-left">
+    <!-- Replace YOUR_LOGO_URL with the actual URL of your logo -->
+    <img src="YOUR_LOGO_URL" alt="2EH Logo">
   </div>
+</header>
 
-  <!-- Content Area -->
-  <div class="content">
-    <div class="header">
-      <p>About Us</p>
-    </div>
-    <p>
-      2EH Consulting is a boutique consultancy that provides expert advice in urban growth and infrastructure planning. We help local governments build sustainable, data-driven, and practical infrastructure solutions.
-    </p>
-  </div>
+<!-- Sidebar Menu -->
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Our Services</a>
+  <a href="contact.html">Contact</a>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 2EH Consulting</p>
-  </footer>
+<!-- Main Content -->
+<div class="content-section">
+  <h1>About 2EH Consulting</h1>
+  <p>
+    2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments.
+  </p>
+</div>
+
+<footer>
+  <p>&copy; 2025 2EH Consulting</p>
+</footer>
 
 </body>
 </html>
