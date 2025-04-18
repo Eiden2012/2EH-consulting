@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>2EH Consulting - Contact</title>
+  <title>Our Services - 2EH Consulting</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
+      flex-direction: row-reverse;
       min-height: 100vh;
-      flex-direction: row;
     }
 
     .sidebar {
       width: 220px;
       background-color: white;
-      color: black;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-      position: fixed;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
-
-    .sidebar img {
-      width: 100px;
-      margin-bottom: 40px;
-      align-self: flex-start;
-      margin-left: 20px;
+      align-items: flex-start;
+      padding: 40px 20px;
     }
 
     .sidebar a {
-      color: black;
       text-decoration: none;
+      color: black;
       font-size: 20px;
-      margin: 20px 0;
-    }
-
-    .sidebar a:hover {
-      text-decoration: underline;
+      margin: 30px 0;
     }
 
     .main-content {
-      flex: 1;
-      padding: 40px;
-      padding-right: 260px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    .content {
+      padding: 30px 40px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+
+    .services-image {
+      max-width: 400px;
+      margin-right: 30px;
     }
 
     footer {
@@ -54,30 +61,35 @@
       color: white;
       text-align: center;
       padding: 30px 20px;
-      margin-top: 100px;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
-  <div class="main-content">
-    <h1>Contact Us</h1>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Our Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="main-content">
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Logo">
+  </header>
+
+  <div class="content">
+    <img src="https://environment.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2023-02/NA1442_shutterstock_355734689.jpg?itok=4nZas8Br" class="services-image" alt="City Planning">
     <p>
-      Phone: (07) 1234 5678<br>
-      Email: contact@2ehconsulting.com<br>
-      Address: 100 Urban Way, Brisbane, QLD 4000
+      Our services include strategic infrastructure planning, Local Government Infrastructure Plans (LGIPs), urban growth modelling, and integrated project management. With in-depth experience supporting local governments, we help align infrastructure delivery with projected population growth and ensure cost-effective, sustainable outcomes for communities.
     </p>
-
-    <footer>
-      &copy; 2025 2EH Consulting
-    </footer>
   </div>
 
-  <div class="sidebar">
-    <img src="https://media.licdn.com/dms/image/v2/D560BAQEQYSD8QkEBqA/company-logo_200_200/company-logo_200_200/0/1725414549367/2eh_consulting_logo?e=2147483647&v=beta&t=2FZttDPkij7Wdzb7Nyq73OCXumhm6cVNxqbCew1FoW0" alt="2EH Consulting Logo">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Our Services</a>
-    <a href="contact.html">Contact</a>
-  </div>
+  <footer>
+    <p>&copy; 2025 2EH Consulting</p>
+  </footer>
+</div>
+
 </body>
 </html>
