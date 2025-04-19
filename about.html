@@ -8,59 +8,63 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: row-reverse;
-      height: 100vh;
     }
 
-    .sidebar {
-      background-color: white;
-      color: black;
-      width: 250px;
-      padding-top: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .sidebar a {
-      text-decoration: none;
-      color: black;
-      font-size: 20px;
-      margin: 30px 0;
-      font-weight: bold;
-    }
-
-    .main {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: white;
+    .logo {
       padding: 10px;
     }
 
-    header img {
-      height: 80px;
+    .logo img {
+      height: 90px;
     }
 
-    .content {
-      flex-grow: 1;
-      padding: 30px;
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100%;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 120px;
+      gap: 40px;
+      font-size: 22px;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-content {
+      margin-right: 200px;
+      padding: 40px;
+      padding-top: 20px;
     }
 
     .footer {
       background-color: black;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
+
+  <div class="logo">
+    <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-19T09%3A49%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=sLh5CXPoV9gGcTHexUwaW5129IiFsHGESq2dpBTfkQc%3D" alt="2EH Consulting Logo">
+  </div>
+
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -68,19 +72,16 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <div class="main">
-    <header>
-      <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-18T12%3A38%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=udEj/ALpIhmvhi9jwQofabzfOTd9cnKXiqb1euATAKA%3D" alt="2EH Consulting Logo">
-    </header>
-
-    <div class="content">
-      <h1>About Us</h1>
-      <p>At 2EH Consulting, we bring deep expertise in infrastructure strategy, planning, and policy development. We work closely with government bodies, developers, and communities to deliver outcomes that are sustainable and future-proof.</p>
-    </div>
-
-    <div class="footer">
-      <p>© 2025 2EH Consulting. All rights reserved.</p>
-    </div>
+  <div class="main-content">
+    <h1>About Us</h1>
+    <p>
+      At 2EH Consulting, we bring decades of combined experience helping local governments plan for future growth. Our team works closely with councils to understand their needs and deliver tailored, data-driven solutions.
+    </p>
   </div>
+
+  <div class="footer">
+    &copy; 2025 2EH Consulting. All rights reserved.
+  </div>
+
 </body>
 </html>
