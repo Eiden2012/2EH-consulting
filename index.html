@@ -8,66 +8,71 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: row-reverse;
-      height: 100vh;
     }
 
-    .sidebar {
-      background-color: white;
-      color: black;
-      width: 250px;
-      padding-top: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .sidebar a {
-      text-decoration: none;
-      color: black;
-      font-size: 20px;
-      margin: 30px 0;
-      font-weight: bold;
-    }
-
-    .main {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: white;
+    .logo {
       padding: 10px;
     }
 
-    header img {
-      height: 80px;
+    .logo img {
+      height: 70px;
     }
 
-    .content {
-      flex-grow: 1;
-      padding: 30px;
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100%;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 120px;
+      gap: 30px;
+      font-size: 20px;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .main-content {
+      margin-right: 200px;
+      padding: 40px;
+      padding-top: 20px;
+    }
+
+    .full-width-image {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
     }
 
     .footer {
       background-color: black;
       color: white;
       text-align: center;
-      padding: 20px;
-    }
-
-    .home-image {
+      padding: 20px 10px;
+      position: relative;
+      bottom: 0;
       width: 100%;
-      max-width: 900px;
-      display: block;
-      margin: 40px auto;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Logo on top left -->
+  <div class="logo">
+    <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-18T12%3A38%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=udEj/ALpIhmvhi9jwQofabzfOTd9cnKXiqb1euATAKA%3D" alt="2EH Consulting Logo">
+  </div>
+
+  <!-- Sidebar Menu on Right -->
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -75,21 +80,21 @@
     <a href="contact.html">Contact</a>
   </div>
 
-  <div class="main">
-    <header>
-      <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-18T12%3A38%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=udEj/ALpIhmvhi9jwQofabzfOTd9cnKXiqb1euATAKA%3D" alt="2EH Consulting Logo">
-    </header>
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to 2EH Consulting</h1>
+    <p>
+      We specialise in strategic infrastructure planning and delivery. Our expertise supports government and private sectors with sustainable and innovative infrastructure solutions.
+    </p>
 
-    <div class="content">
-      <h1>Welcome to 2EH Consulting</h1>
-      <p>   2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.</p>
-
-      <img class="home-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
-    </div>
-
-    <div class="footer">
-      <p>© 2025 2EH Consulting. All rights reserved.</p>
-    </div>
+    <!-- Full Width Image -->
+    <img class="full-width-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
   </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 2EH Consulting. All rights reserved.
+  </div>
+
 </body>
 </html>
