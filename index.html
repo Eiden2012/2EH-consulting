@@ -9,90 +9,87 @@
       margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
-      min-height: 100vh;
-      flex-direction: column;
+      flex-direction: row-reverse;
+      height: 100vh;
     }
-    header {
+
+    .sidebar {
+      background-color: white;
+      color: black;
+      width: 250px;
+      padding-top: 30px;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      background: white;
-      padding: 15px;
-      border-bottom: 2px solid #ccc;
     }
+
+    .sidebar a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      margin: 30px 0;
+      font-weight: bold;
+    }
+
+    .main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: white;
+      padding: 10px;
+    }
+
     header img {
       height: 80px;
-      margin-right: 10px;
     }
-    .container {
-      display: flex;
-      flex: 1;
-    }
-    .sidebar {
-      width: 250px;
-      background: #1a1a1a;
-      color: white;
-      padding: 30px 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      position: fixed;
-      right: 0;
-      top: 113px;
-      height: calc(100% - 113px);
-    }
-    .sidebar a {
-      color: #d4af37;
-      text-decoration: none;
-      font-size: 20px;
-      margin: 20px 0;
-      display: block;
-    }
-    .sidebar a:hover {
-      text-decoration: underline;
-    }
-    main {
-      flex: 1;
-      padding: 40px;
-      padding-right: 270px;
-    }
-    .footer {
-      background: black;
-      color: white;
+
+    .content {
+      flex-grow: 1;
       padding: 30px;
-      text-align: center;
-      margin-top: auto;
     }
-    .content-image {
-      max-width: 100%;
-      margin-top: 60px;
+
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .home-image {
+      width: 100%;
+      max-width: 900px;
       display: block;
+      margin: 40px auto;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-18T12%3A38%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=udEj/ALpIhmvhi9jwQofabzfOTd9cnKXiqb1euATAKA%3D" alt="2EH Consulting Logo">
-</header>
-
-<div class="container">
-  <main>
-    <h1>Welcome to 2EH Consulting</h1>
-    <p>We specialise in strategic infrastructure and urban management. With extensive experience and a commitment to sustainable development, we deliver innovative solutions tailored to client needs.</p>
-    <img class="content-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City" />
-  </main>
-
-  <nav class="sidebar">
+  <div class="sidebar">
     <a href="index.html">Home</a>
-    <a href="our-services.html">Our Services</a>
     <a href="about.html">About</a>
+    <a href="services.html">Our Services</a>
     <a href="contact.html">Contact</a>
-  </nav>
-</div>
+  </div>
 
-<footer class="footer">
-  &copy; 2025 2EH Consulting. All rights reserved.
-</footer>
+  <div class="main">
+    <header>
+      <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-18T12%3A38%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=udEj/ALpIhmvhi9jwQofabzfOTd9cnKXiqb1euATAKA%3D" alt="2EH Consulting Logo">
+    </header>
 
+    <div class="content">
+      <h1>Welcome to 2EH Consulting</h1>
+      <p>We specialise in delivering infrastructure planning and management solutions tailored for future-ready communities.</p>
+
+      <img class="home-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
+    </div>
+
+    <div class="footer">
+      <p>© 2025 2EH Consulting. All rights reserved.</p>
+    </div>
+  </div>
 </body>
 </html>
