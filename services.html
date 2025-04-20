@@ -5,13 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>2EH Consulting - Our Expertise</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-container {
+      display: flex;
+      flex: 1;
+      position: relative;
     }
 
     .logo {
       padding: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      background-color: white;
     }
 
     .logo img {
@@ -34,6 +56,7 @@
       font-size: 20px;
       font-weight: bold;
       box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      z-index: 5;
     }
 
     .sidebar a {
@@ -42,19 +65,21 @@
     }
 
     .main-content {
+      flex-grow: 1;
       margin-right: 200px;
-      padding: 60px 40px 100px 40px;
+      padding: 140px 40px 100px 40px;
     }
 
     .expertise-section {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 60px;
+      justify-content: space-between;
+      margin-bottom: 80px;
       gap: 20px;
     }
 
     .expertise-section img {
-      width: 240px;
+      width: 280px;
       height: auto;
     }
 
@@ -63,47 +88,51 @@
       color: white;
       text-align: center;
       padding: 20px 10px;
-      position: relative;
       width: 100%;
-      margin-top: 100px;
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo on top left -->
   <div class="logo">
     <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-19T09%3A49%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=sLh5CXPoV9gGcTHexUwaW5129IiFsHGESq2dpBTfkQc%3D" alt="2EH Consulting Logo">
   </div>
 
-  <!-- Sidebar Menu on Right -->
-  <div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="expertise.html">Our Expertise</a>
-    <a href="contact.html">Contact</a>
-  </div>
-
-  <!-- Main Content -->
-  <div class="main-content">
-    <div class="expertise-section">
-      <div>
-        <h2>Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</h2>
-        <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
-      </div>
-      <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
+  <div class="page-container">
+    <div class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="expertise.html">Our Expertise</a>
+      <a href="contact.html">Contact</a>
     </div>
 
-    <div class="expertise-section">
-      <div>
-        <h2>Infrastructure Charging and Policy Advisory:</h2>
-        <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
+    <div class="main-content">
+      <div class="expertise-section">
+        <div>
+          <h2>Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</h2>
+          <p>
+            We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning
+            with legislative requirements and long-term growth strategies.
+          </p>
+        </div>
+        <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
       </div>
-      <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Advisory Services">
+
+      <div class="expertise-section">
+        <div>
+          <h2>Infrastructure Charging and Policy Advisory:</h2>
+          <p>
+            We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding
+            approaches to support sustainable growth and community outcomes.
+          </p>
+        </div>
+        <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Advisory Services">
+      </div>
     </div>
   </div>
 
-  <!-- Footer -->
   <div class="footer">
     &copy; 2025 2EH Consulting. All rights reserved.
   </div>
