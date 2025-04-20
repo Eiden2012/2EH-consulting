@@ -41,37 +41,49 @@
       text-decoration: none;
     }
 
-    .main-content {
+    .main-wrapper {
       margin-right: 200px;
       padding: 40px;
       padding-top: 60px;
-      padding-bottom: 120px;
+      padding-bottom: 160px;
+    }
+
+    .expertise-row {
+      display: flex;
+      gap: 40px;
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
 
     .expertise-section {
       display: flex;
-      width: 50%;
-      margin-bottom: 40px;
+      flex-direction: row;
       align-items: center;
       gap: 20px;
     }
 
     .expertise-text {
-      flex: 1;
+      max-width: 300px;
     }
 
     .expertise-text h2 {
-      font-size: 18px;
-      margin-bottom: 8px;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
     .expertise-text p {
-      font-size: 16px;
+      font-size: 17px;
       margin: 0;
+      word-wrap: break-word;
     }
 
     .expertise-image img {
-      width: 160px;
+      width: 200px;
       height: auto;
       border-radius: 8px;
     }
@@ -84,18 +96,18 @@
       position: relative;
       bottom: 0;
       width: 100%;
-      margin-top: 100px;
+      margin-top: 150px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo on top left -->
+  <!-- Logo -->
   <div class="logo">
     <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-19T09%3A49%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=sLh5CXPoV9gGcTHexUwaW5129IiFsHGESq2dpBTfkQc%3D" alt="2EH Consulting Logo">
   </div>
 
-  <!-- Sidebar Menu on Right -->
+  <!-- Sidebar -->
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -104,27 +116,47 @@
   </div>
 
   <!-- Main Content -->
-  <div class="main-content">
-    <!-- Topic 1 -->
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <h2>Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</h2>
-        <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
-      </div>
-      <div class="expertise-image">
-        <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
-      </div>
-    </div>
+  <div class="main-wrapper">
+    <div class="expertise-row">
 
-    <!-- Topic 2 -->
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <h2>Infrastructure Charging and Policy Advisory:</h2>
-        <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
+      <!-- Left Column (Topic 1 + Topic 2) -->
+      <div class="column">
+        <!-- Topic 1 -->
+        <div class="expertise-section">
+          <div class="expertise-text">
+            <h2>Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</h2>
+            <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
+          </div>
+          <div class="expertise-image">
+            <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
+          </div>
+        </div>
+
+        <!-- Topic 2 -->
+        <div class="expertise-section">
+          <div class="expertise-text">
+            <h2>Infrastructure Charging and Policy Advisory:</h2>
+            <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
+          </div>
+          <div class="expertise-image">
+            <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Policy Advisory">
+          </div>
+        </div>
       </div>
-      <div class="expertise-image">
-        <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Policy Advisory">
+
+      <!-- Right Column (Topic 3) -->
+      <div class="column">
+        <div class="expertise-section">
+          <div class="expertise-text">
+            <h2>Urban Growth Modeling and Development Policy:</h2>
+            <p>Our advanced growth models and analytics tools equip councils with the insights needed to make informed decisions on land use, infrastructure investment, and urban development.</p>
+          </div>
+          <div class="expertise-image">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/10/41/94/1000_F_310419474_91vHtoNCZ7gqYINuTofBxKO7UgGZMbHU.jpg" alt="High Rise Construction">
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 
