@@ -8,13 +8,10 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
     .logo {
-      padding: 20px;
+      padding: 10px;
     }
 
     .logo img {
@@ -34,7 +31,7 @@
       align-items: center;
       padding-top: 120px;
       gap: 30px;
-      font-size: 24px; /* Increased size here */
+      font-size: 20px;
       box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     }
 
@@ -46,29 +43,28 @@
 
     .main-content {
       margin-right: 200px;
-      padding: 60px 40px 100px 40px;
-      flex: 1;
+      padding: 40px;
+      padding-top: 60px;
     }
 
-    .section {
+    .expertise-section {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 80px;
-      gap: 40px;
+      justify-content: space-between;
+      margin-bottom: 50px;
     }
 
-    .section img {
-      max-width: 300px;
+    .expertise-text {
+      width: 60%;
+    }
+
+    .expertise-image {
+      width: 35%;
+    }
+
+    .expertise-image img {
+      width: 100%;
       height: auto;
-    }
-
-    .section h2 {
-      margin-bottom: 10px;
-    }
-
-    .section-text {
-      max-width: 600px;
     }
 
     .footer {
@@ -76,7 +72,8 @@
       color: white;
       text-align: center;
       padding: 20px 10px;
-      margin-top: auto;
+      margin-top: 80px;
+      position: relative;
       width: 100%;
     }
   </style>
@@ -92,30 +89,35 @@
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="services.html">Our Expertise</a>
+    <a href="services.html">Our Services</a>
+    <a href="expertise.html">Our Expertise</a>
     <a href="contact.html">Contact</a>
   </div>
 
   <!-- Main Content -->
   <div class="main-content">
-    <div class="section">
-      <div class="section-text">
+    <div class="expertise-section">
+      <div class="expertise-text">
         <h2>Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</h2>
         <p>
           We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.
         </p>
       </div>
-      <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
+      <div class="expertise-image">
+        <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
+      </div>
     </div>
 
-    <div class="section">
-      <div class="section-text">
+    <div class="expertise-section">
+      <div class="expertise-text">
         <h2>Infrastructure Charging and Policy Advisory:</h2>
         <p>
           We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.
         </p>
       </div>
-      <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Policy Advisory">
+      <div class="expertise-image">
+        <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Policy Advisory">
+      </div>
     </div>
   </div>
 
