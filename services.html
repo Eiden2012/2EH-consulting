@@ -52,32 +52,36 @@
     .main-content {
       flex: 1;
       margin-right: 200px;
-      padding: 80px 40px 60px 40px;
+      padding: 60px 40px 80px 40px;
     }
 
-    .expertise-row {
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 40px;
+    }
+
+    .expertise-box {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 60px;
+      gap: 20px;
+      align-items: flex-start;
     }
 
-    .expertise-column {
-      width: 48%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .expertise-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+    .expertise-text {
+      flex: 1;
     }
 
     .expertise-title {
       font-weight: bold;
       font-size: 18px;
       margin-bottom: 10px;
+    }
+
+    .expertise-image {
+      width: 220px;
+      height: auto;
+      border-radius: 8px;
     }
 
     .footer {
@@ -107,29 +111,37 @@
 
   <!-- Main Content -->
   <div class="main-content">
-
-    <!-- First Topic -->
-    <div class="expertise-row">
-      <div class="expertise-column">
-        <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
-        <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
-      </div>
-      <div class="expertise-column">
+    <div class="expertise-grid">
+      <!-- First Topic -->
+      <div class="expertise-box">
+        <div class="expertise-text">
+          <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
+          <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
+        </div>
         <img class="expertise-image" src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
       </div>
-    </div>
 
-    <!-- Second Topic -->
-    <div class="expertise-row">
-      <div class="expertise-column">
-        <div class="expertise-title">Infrastructure Charging and Policy Advisory:</div>
-        <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
+      <!-- Third Topic (Top Right) -->
+      <div class="expertise-box">
+        <div class="expertise-text">
+          <div class="expertise-title">Urban Growth Modeling and Development Policy:</div>
+          <p>Our advanced growth models and analytics tools equip councils with the insights needed to make informed decisions on land use, infrastructure investment, and urban development.</p>
+        </div>
+        <img class="expertise-image" src="https://media.istockphoto.com/id/1150685023/photo/high-rise-construction-site.jpg" alt="Urban Growth">
       </div>
-      <div class="expertise-column">
+
+      <!-- Second Topic (Below First) -->
+      <div class="expertise-box">
+        <div class="expertise-text">
+          <div class="expertise-title">Infrastructure Charging and Policy Advisory:</div>
+          <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
+        </div>
         <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Infrastructure Advisory">
       </div>
-    </div>
 
+      <!-- Empty Slot (Below Third for future fourth topic) -->
+      <div></div>
+    </div>
   </div>
 
   <!-- Footer -->
