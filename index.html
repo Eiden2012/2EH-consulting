@@ -9,71 +9,85 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    .container {
-      display: flex;
-      min-height: 100vh;
+    .logo {
+      padding: 10px;
+    }
+    .logo img {
+      height: 90px;
     }
     .sidebar {
-      width: 220px;
-      background-color: #333;
-      color: white;
-      padding: 20px 0;
       position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
       height: 100%;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 120px;
+      gap: 40px;
+      font-size: 22px;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     }
-    .sidebar img {
-      width: 180px;
-      display: block;
-      margin: 0 auto 20px;
-    }
-    .sidebar ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-    .sidebar ul li a {
-      color: white;
+    .sidebar a {
+      color: black;
       text-decoration: none;
-      display: block;
-      padding: 15px;
-      font-size: 18px;
-      text-align: center;
+      font-weight: bold;
     }
-    .sidebar ul li a:hover {
-      background-color: #555;
+    .main-content {
+      margin-right: 200px;
+      padding: 40px;
+      padding-top: 20px;
     }
-    .main {
-      margin-left: 220px;
-      padding: 60px 40px 120px 40px;
-      flex: 1;
+    .full-width-image {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
     }
-    footer {
+    .footer {
       background-color: black;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 20px 10px;
       position: relative;
       bottom: 0;
       width: 100%;
-      margin-top: 80px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img src="image002.png" alt="2EH Logo">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="expertise.html">Our Expertise</a></li>
-      </ul>
-    </div>
-    <div class="main">
-      <h1>Welcome to 2EH Consulting</h1>
-      <p>Your trusted partner in infrastructure planning, LGIP preparation, and strategic growth solutions tailored for local government needs.</p>
-      <footer>&copy; 2025 2EH Consulting. All rights reserved.</footer>
-    </div>
+
+  <!-- Logo on top left -->
+  <div class="logo">
+    <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-19T09%3A49%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=sLh5CXPoV9gGcTHexUwaW5129IiFsHGESq2dpBTfkQc%3D" alt="2EH Consulting Logo">
   </div>
+
+  <!-- Sidebar Menu on Right -->
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Our Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to 2EH Consulting</h1>
+    <p>
+       2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments.
+    </p>
+
+    <!-- Full Width Image -->
+    <img class="full-width-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 2EH Consulting. All rights reserved.
+  </div>
+
 </body>
 </html>
