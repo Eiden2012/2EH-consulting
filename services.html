@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>2EH Consulting - Our Expertise</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .logo {
@@ -43,38 +50,34 @@
     }
 
     .main-content {
-      margin-right: 200px;
-      padding: 40px;
-      padding-top: 60px;
-    }
-
-    .expertise-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: space-between;
-    }
-
-    .expertise-section {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      gap: 20px;
-      width: 48%;
-    }
-
-    .expertise-text {
       flex: 1;
+      margin-right: 200px;
+      padding: 80px 40px 60px 40px;
     }
 
-    .expertise-text h2 {
-      margin-top: 0;
+    .expertise-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
     }
 
-    .expertise-image img {
-      width: 200px;
+    .expertise-column {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .expertise-image {
+      max-width: 100%;
       height: auto;
       border-radius: 8px;
+    }
+
+    .expertise-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
     .footer {
@@ -82,8 +85,8 @@
       color: white;
       text-align: center;
       padding: 20px 10px;
-      margin-top: 100px;
       width: 100%;
+      margin-top: auto;
     }
   </style>
 </head>
@@ -104,43 +107,29 @@
 
   <!-- Main Content -->
   <div class="main-content">
-    <h1>Our Expertise</h1>
-    <div class="expertise-wrapper">
 
-      <!-- Topic 1 -->
-      <div class="expertise-section">
-        <div class="expertise-text">
-          <h2>Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</h2>
-          <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
-        </div>
-        <div class="expertise-image">
-          <img src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
-        </div>
+    <!-- First Topic -->
+    <div class="expertise-row">
+      <div class="expertise-column">
+        <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
+        <p>We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.</p>
       </div>
-
-      <!-- Topic 2 -->
-      <div class="expertise-section">
-        <div class="expertise-text">
-          <h2>Infrastructure Charging and Policy Advisory:</h2>
-          <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
-        </div>
-        <div class="expertise-image">
-          <img src="https://www.nortec.org.au/wp-content/uploads/2023/10/Gain-Insight-with-Professional-Business-Advisory-Services.png" alt="Policy Advisory">
-        </div>
+      <div class="expertise-column">
+        <img class="expertise-image" src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
       </div>
-
-      <!-- Topic 3 -->
-      <div class="expertise-section">
-        <div class="expertise-text">
-          <h2>Urban Growth Modeling and Development Policy:</h2>
-          <p>Our advanced growth models and analytics tools equip councils with the insights needed to make informed decisions on land use, infrastructure investment, and urban development.</p>
-        </div>
-        <div class="expertise-image">
-          <img src="https://cdn.pixabay.com/photo/2016/11/29/07/08/building-1867767_1280.jpg" alt="Urban Construction with Crane">
-        </div>
-      </div>
-
     </div>
+
+    <!-- Second Topic -->
+    <div class="expertise-row">
+      <div class="expertise-column">
+        <div class="expertise-title">Infrastructure Charging and Policy Advisory:</div>
+        <p>We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.</p>
+      </div>
+      <div class="expertise-column">
+        <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Infrastructure Advisory">
+      </div>
+    </div>
+
   </div>
 
   <!-- Footer -->
