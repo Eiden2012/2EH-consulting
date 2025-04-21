@@ -5,106 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>2EH Consulting - Home</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      height: 100%;
     }
-
-    .logo {
-      padding: 10px;
-    }
-
-    .logo img {
-      height: 90px;
-    }
-
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 200px;
-      height: 100%;
-      background-color: white;
-      color: black;
+    .container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 120px;
-      gap: 40px;
-      font-size: 22px;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-      z-index: 10;
-    }
-
-    .sidebar a {
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .content-wrapper {
-      display: flex;
-      flex-direction: column;
       min-height: 100vh;
-      margin-right: 200px;
     }
-
-    .main-content {
+    .sidebar {
+      width: 220px;
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      position: fixed;
+      height: 100%;
+    }
+    .sidebar img {
+      width: 180px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .sidebar ul li a:hover {
+      background-color: #555;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 60px 40px 120px 40px;
       flex: 1;
-      padding: 40px;
-      padding-top: 20px;
     }
-
-    .full-width-image {
-      width: 100%;
-      height: auto;
-      margin-top: 40px;
-    }
-
-    .footer-spacer {
-      height: 100px;
-    }
-
-    .footer {
+    footer {
       background-color: black;
       color: white;
       text-align: center;
-      padding: 20px 10px;
-      width: 100%;
+      padding: 20px;
       position: relative;
-      z-index: 5;
+      bottom: 0;
+      width: 100%;
+      margin-top: 80px;
     }
   </style>
 </head>
 <body>
-
-  <div class="logo">
-    <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-19T09%3A49%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=sLh5CXPoV9gGcTHexUwaW5129IiFsHGESq2dpBTfkQc%3D" alt="2EH Consulting Logo">
-  </div>
-
-  <div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Our Expertise</a>
-    <a href="contact.html">Contact</a>
-  </div>
-
-  <div class="content-wrapper">
-    <div class="main-content">
+  <div class="container">
+    <div class="sidebar">
+      <img src="image002.png" alt="2EH Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="expertise.html">Our Expertise</a></li>
+      </ul>
+    </div>
+    <div class="main">
       <h1>Welcome to 2EH Consulting</h1>
-      <p>
-        2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments. We empower councils to navigate complex planning challenges and ensure that communities thrive through sustainable and data-driven infrastructure solutions.
-      </p>
-      <img class="full-width-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
-      <div class="footer-spacer"></div>
-    </div>
-
-    <div class="footer">
-      &copy; 2025 2EH Consulting. All rights reserved.
+      <p>Your trusted partner in infrastructure planning, LGIP preparation, and strategic growth solutions tailored for local government needs.</p>
+      <footer>&copy; 2025 2EH Consulting. All rights reserved.</footer>
     </div>
   </div>
-
 </body>
 </html>
