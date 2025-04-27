@@ -15,10 +15,10 @@
       left: 0;
       padding: 10px;
       background-color: white; /* Clean background for logo */
-      z-index: 1000; /* Make sure logo stays above everything */
+      z-index: 1000; /* Logo always on top */
     }
     .logo img {
-      height: 90px;
+      height: 120px; /* Bigger logo like the Our Expertise page */
     }
     .sidebar {
       position: fixed;
@@ -31,7 +31,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 120px;
+      padding-top: 150px; /* Slightly lower to match new bigger logo */
       gap: 40px;
       font-size: 22px;
       box-shadow: -2px 0 5px rgba(0,0,0,0.1);
@@ -44,7 +44,7 @@
     .main-content {
       margin-right: 200px;
       padding: 40px;
-      padding-top: 140px; /* Push content down so it doesn't hide behind logo */
+      padding-top: 160px; /* Push down to make space for logo */
     }
     .full-width-image {
       width: 100%;
@@ -74,7 +74,7 @@
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="services.html">Our Services</a>
+    <a href="services.html">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
     <a href="contact.html">Contact</a>
   </div>
 
