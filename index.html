@@ -72,18 +72,17 @@
       margin-right: 200px;
       padding: 40px;
       padding-top: 160px; /* Space for logo */
-      position: relative; /* Keeps it above the image */
-      z-index: 2; /* Makes sure the text is above the image */
+      z-index: 2; /* Keeps text above image */
     }
 
     .full-width-image {
       width: 100%;
       height: auto;
       margin-top: 40px;
-      position: absolute;
-      top: 0;
+      position: fixed; /* Makes the image fixed */
+      top: 160px; /* Align it with the main content */
       left: 0;
-      z-index: 1; /* Ensures the image is behind the text */
+      z-index: 1; /* Ensure image stays behind the text */
     }
 
     .footer {
@@ -107,14 +106,14 @@
 
   <!-- Sidebar Menu on Right -->
   <div class="sidebar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#expertise">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
+    <a href="contact.html">Contact</a>
   </div>
 
   <!-- Main Content -->
-  <div class="main-content" id="home">
+  <div class="main-content">
     <h1>Welcome to 2EH Consulting</h1>
     <p>
       2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments.
