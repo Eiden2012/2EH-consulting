@@ -16,12 +16,13 @@
     }
 
     .logo {
-      position: fixed;
+      position: absolute; /* Changed from fixed to absolute */
       top: 0;
       left: 0;
       padding: 10px;
       background-color: white; /* Clean background for logo */
       z-index: 1000; /* Logo always on top */
+      width: 100%;
     }
 
     .logo img {
@@ -78,7 +79,6 @@
       width: 100%;
       height: auto;
       margin-top: 40px;
-      /* Image will now scroll with the page */
     }
 
     .footer {
