@@ -8,6 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #ffffff;
     }
 
     .logo {
@@ -15,7 +16,7 @@
     }
 
     .logo img {
-      height: 150px; /* Increased logo size */
+      height: 150px;
     }
 
     .sidebar {
@@ -49,40 +50,30 @@
     .expertise-section {
       display: flex;
       align-items: center;
-      margin-bottom: 60px;
-      max-width: 100%;
-    }
-
-    .expertise-section.column {
-      flex-direction: column;
-      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      gap: 60px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 40px;
     }
 
     .expertise-text {
       flex: 1;
       font-size: 20px;
-      margin-right: 100px; /* Made the space much bigger */
     }
 
     .expertise-title {
       font-weight: bold;
-      margin-bottom: 10px;
-      font-size: 22px;
+      margin-bottom: 15px;
+      font-size: 24px;
     }
 
     .expertise-image {
-      max-width: 350px;
-      height: auto;
-    }
-
-    .content-row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .left-half, .right-half {
       flex: 1;
-      min-width: 450px;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
     }
 
     .footer {
@@ -95,16 +86,27 @@
       left: 0;
       width: 100%;
     }
+
+    @media (max-width: 900px) {
+      .expertise-section {
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .expertise-image {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Logo on top left -->
+  <!-- Logo -->
   <div class="logo">
     <img src="image002.png" alt="2EH Consulting Logo">
   </div>
 
-  <!-- Sidebar Menu on Right -->
+  <!-- Sidebar -->
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -114,43 +116,39 @@
 
   <!-- Main Content -->
   <div class="main-content">
-    <div class="content-row">
-      <div class="left-half">
-        <div class="expertise-section">
-          <div class="expertise-text">
-            <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
-            We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.
-          </div>
-          <img class="expertise-image" src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
-        </div>
 
-        <div class="expertise-section">
-          <div class="expertise-text">
-            <div class="expertise-title">Infrastructure Charging and Policy Advisory:</div>
-            We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.
-          </div>
-          <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Policy Advisory">
-        </div>
+    <div class="expertise-section">
+      <div class="expertise-text">
+        <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
+        We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.
       </div>
-
-      <div class="right-half">
-        <div class="expertise-section">
-          <div class="expertise-text">
-            <div class="expertise-title">Urban Growth Modeling and Development Policy:</div>
-            Our advanced growth models and analytics tools equip councils with the insights needed to make informed decisions on land use, infrastructure investment, and urban development.
-          </div>
-          <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Urban Growth Modeling">
-        </div>
-
-        <div class="expertise-section">
-          <div class="expertise-text">
-            <div class="expertise-title">Project Management of Multi-Disciplinary Initiatives:</div>
-            With a proven track record of managing complex projects, we deliver coordinated and impactful infrastructure strategies that drive long-term value.
-          </div>
-          <img class="expertise-image" src="https://s29814.pcdn.co/wp-content/uploads/2021/06/shutterstock_1175858854.jpg.optimal.jpg" alt="Project Management">
-        </div>
-      </div>
+      <img class="expertise-image" src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
     </div>
+
+    <div class="expertise-section">
+      <div class="expertise-text">
+        <div class="expertise-title">Infrastructure Charging and Policy Advisory:</div>
+        We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.
+      </div>
+      <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Policy Advisory">
+    </div>
+
+    <div class="expertise-section">
+      <div class="expertise-text">
+        <div class="expertise-title">Urban Growth Modeling and Development Policy:</div>
+        Our advanced growth models and analytics tools equip councils with the insights needed to make informed decisions on land use, infrastructure investment, and urban development.
+      </div>
+      <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Urban Growth Modeling">
+    </div>
+
+    <div class="expertise-section">
+      <div class="expertise-text">
+        <div class="expertise-title">Project Management of Multi-Disciplinary Initiatives:</div>
+        With a proven track record of managing complex projects, we deliver coordinated and impactful infrastructure strategies that drive long-term value.
+      </div>
+      <img class="expertise-image" src="https://s29814.pcdn.co/wp-content/uploads/2021/06/shutterstock_1175858854.jpg.optimal.jpg" alt="Project Management">
+    </div>
+
   </div>
 
   <!-- Footer -->
