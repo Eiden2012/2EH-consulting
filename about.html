@@ -7,14 +7,20 @@
   <style>
     /* Same styles as index.html */
     html, body { margin: 0; padding: 0; font-family: Arial, sans-serif; height: 100%; }
-    .logo { padding: 10px; }
+    .logo { 
+      padding: 10px; 
+      position: fixed; 
+      top: 20px; /* Adjust the top position if needed */
+      left: 20px; /* Adjust the left position if needed */
+      z-index: 10;
+    }
     .logo img { height: 90px; }
     .sidebar {
       position: fixed; top: 0; right: 0; width: 200px; height: 100%;
       background-color: white; color: black; display: flex;
       flex-direction: column; align-items: center; padding-top: 120px;
       gap: 40px; font-size: 22px; box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-      z-index: 10;
+      z-index: 5;
     }
     .sidebar a {
       color: black; 
@@ -49,8 +55,9 @@
 </head>
 <body>
 
+  <!-- Logo on top left -->
   <div class="logo">
-    <img src="https://files.oaiusercontent.com/file-3gdfJDpeF6hmPHsZNgCrkM?se=2025-04-19T09%3A49%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3DScreenshot%25202025-04-18%2520001838.png&sig=sLh5CXPoV9gGcTHexUwaW5129IiFsHGESq2dpBTfkQc%3D" alt="2EH Consulting Logo">
+    <img src="image002.png" alt="2EH Consulting Logo">
   </div>
 
   <div class="sidebar">
