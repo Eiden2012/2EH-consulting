@@ -7,14 +7,17 @@
   <style>
     /* Same styles as index.html */
     html, body { margin: 0; padding: 0; font-family: Arial, sans-serif; height: 100%; }
-    .logo { 
-      padding: 10px; 
-      position: absolute; 
-      top: 20px; /* Adjusted position of logo */
-      left: 20px; 
+    
+    /* Logo positioning at the top left */
+    .logo {
+      position: absolute;
+      top: 20px; /* Space from the top */
+      left: 20px; /* Space from the left */
       z-index: 10;
     }
     .logo img { height: 90px; }
+    
+    /* Sidebar */
     .sidebar {
       position: fixed; top: 0; right: 0; width: 200px; height: 100%;
       background-color: white; color: black; display: flex;
@@ -44,12 +47,33 @@
       transform: scaleX(1);
       transform-origin: bottom left;
     }
-    .content-wrapper { display: flex; flex-direction: column; min-height: 100vh; margin-right: 200px; }
-    .main-content { flex: 1; padding: 40px; padding-top: 20px; }
+
+    /* Content Wrapper to push content below logo */
+    .content-wrapper { 
+      display: flex; 
+      flex-direction: column; 
+      min-height: 100vh; 
+      margin-right: 200px; 
+      padding-top: 140px; /* Pushed content down to create space for logo */
+    }
+
+    .main-content { 
+      flex: 1; 
+      padding: 40px; 
+      padding-top: 20px; 
+    }
+
     .footer-spacer { height: 100px; }
+    
+    /* Footer styling */
     .footer {
-      background-color: black; color: white; text-align: center;
-      padding: 20px 10px; width: 100%; position: relative; z-index: 5;
+      background-color: black; 
+      color: white; 
+      text-align: center;
+      padding: 20px 10px; 
+      width: 100%; 
+      position: relative; 
+      z-index: 5;
     }
   </style>
 </head>
@@ -60,6 +84,7 @@
     <img src="image002.png" alt="2EH Consulting Logo">
   </div>
 
+  <!-- Sidebar Menu -->
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -67,11 +92,11 @@
     <a href="contact.html">Contact</a>
   </div>
 
+  <!-- Main Content Wrapper -->
   <div class="content-wrapper">
     <div class="main-content">
       <h1>About Us</h1>
       <p>We bring decades of experience in urban planning and strategic advice. Our team is driven by a passion for making communities better through well-planned infrastructure.</p>
-      <div class="footer-spacer"></div>
     </div>
     <div class="footer">
       &copy; 2025 2EH Consulting. All rights reserved.
