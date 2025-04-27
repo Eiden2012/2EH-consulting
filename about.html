@@ -3,77 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>2EH Consulting - About</title>
+  <title>2EH Consulting - Home</title>
   <style>
-    /* Same styles as index.html */
-    html, body { margin: 0; padding: 0; font-family: Arial, sans-serif; height: 100%; }
-    
-    /* Logo positioning at the top left */
-    .logo {
-      position: absolute;
-      top: 20px; /* Space from the top */
-      left: 20px; /* Space from the left */
-      z-index: 10;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
-    .logo img { height: 90px; } /* Logo size set to 90px */
-    
-    /* Sidebar */
+    .logo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      background-color: white; /* Clean background for logo */
+      z-index: 1000; /* Logo always on top */
+    }
+    .logo img {
+      height: 120px; /* Bigger logo like Our Expertise page */
+    }
     .sidebar {
-      position: fixed; top: 0; right: 0; width: 200px; height: 100%;
-      background-color: white; color: black; display: flex;
-      flex-direction: column; align-items: center; padding-top: 120px;
-      gap: 40px; font-size: 22px; box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-      z-index: 5;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100%;
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 150px; /* Lower to match bigger logo */
+      gap: 40px;
+      font-size: 22px;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     }
     .sidebar a {
-      color: black; 
-      text-decoration: none; 
-      font-weight: bold; 
-      position: relative;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative; /* Needed for underline */
+      padding-bottom: 5px;
     }
     .sidebar a::after {
-      content: '';
+      content: "";
       position: absolute;
-      bottom: -5px;
       left: 0;
-      width: 100%;
+      bottom: 0;
+      width: 0%;
       height: 2px;
       background-color: black;
-      transform: scaleX(0);
-      transform-origin: bottom right;
-      transition: transform 0.3s ease-out;
+      transition: width 0.3s ease;
     }
     .sidebar a:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
+      width: 100%;
     }
-
-    /* Content Wrapper to push content below logo */
-    .content-wrapper { 
-      display: flex; 
-      flex-direction: column; 
-      min-height: 100vh; 
-      margin-right: 200px; 
-      padding-top: 140px; /* Pushed content down to create space for logo */
+    .main-content {
+      margin-right: 200px;
+      padding: 40px;
+      padding-top: 160px; /* Space for logo */
     }
-
-    .main-content { 
-      flex: 1; 
-      padding: 40px; 
-      padding-top: 20px; 
+    .full-width-image {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
     }
-
-    .footer-spacer { height: 100px; }
-    
-    /* Footer styling */
     .footer {
-      background-color: black; 
-      color: white; 
+      background-color: black;
+      color: white;
       text-align: center;
-      padding: 20px 10px; 
-      width: 100%; 
-      position: relative; 
-      z-index: 5;
+      padding: 20px 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -84,23 +85,28 @@
     <img src="image002.png" alt="2EH Consulting Logo">
   </div>
 
-  <!-- Sidebar Menu -->
+  <!-- Sidebar Menu on Right -->
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="services.html">Our Expertise</a>
+    <a href="services.html">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
     <a href="contact.html">Contact</a>
   </div>
 
-  <!-- Main Content Wrapper -->
-  <div class="content-wrapper">
-    <div class="main-content">
-      <h1>About Us</h1>
-      <p>We bring decades of experience in urban planning and strategic advice. Our team is driven by a passion for making communities better through well-planned infrastructure.</p>
-    </div>
-    <div class="footer">
-      &copy; 2025 2EH Consulting. All rights reserved.
-    </div>
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Welcome to 2EH Consulting</h1>
+    <p>
+      2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments.
+    </p>
+
+    <!-- Full Width Image -->
+    <img class="full-width-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2025 2EH Consulting. All rights reserved.
   </div>
 
 </body>
