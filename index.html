@@ -9,12 +9,6 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
-    
-    /* Smooth Scroll Effect */
-    html {
-      scroll-behavior: smooth;
-    }
-
     .logo {
       position: fixed;
       top: 0;
@@ -23,11 +17,9 @@
       background-color: white; /* Clean background for logo */
       z-index: 1000; /* Logo always on top */
     }
-
     .logo img {
       height: 120px; /* Bigger logo like Our Expertise page */
     }
-
     .sidebar {
       position: fixed;
       top: 0;
@@ -44,7 +36,6 @@
       font-size: 22px;
       box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     }
-
     .sidebar a {
       color: black;
       text-decoration: none;
@@ -52,7 +43,6 @@
       position: relative; /* Needed for underline */
       padding-bottom: 5px;
     }
-
     .sidebar a::after {
       content: "";
       position: absolute;
@@ -63,23 +53,19 @@
       background-color: black;
       transition: width 0.3s ease;
     }
-
     .sidebar a:hover::after {
       width: 100%;
     }
-
     .main-content {
       margin-right: 200px;
       padding: 40px;
       padding-top: 160px; /* Space for logo */
     }
-
     .full-width-image {
       width: 100%;
       height: auto;
       margin-top: 40px;
     }
-
     .footer {
       background-color: black;
       color: white;
@@ -101,14 +87,14 @@
 
   <!-- Sidebar Menu on Right -->
   <div class="sidebar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#expertise">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
+    <a href="contact.html">Contact</a>
   </div>
 
   <!-- Main Content -->
-  <div class="main-content" id="home">
+  <div class="main-content">
     <h1>Welcome to 2EH Consulting</h1>
     <p>
       2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments.
@@ -118,21 +104,6 @@
     <img class="full-width-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
   </div>
 
-  <div id="about" class="main-content">
-    <h2>About Us</h2>
-    <p>We are a leading firm in providing consultancy services in urban planning and project management.</p>
-  </div>
-
-  <div id="expertise" class="main-content">
-    <h2>Our Expertise</h2>
-    <p>We specialize in Local Government Infrastructure Plans (LGIPs) and strategic planning.</p>
-  </div>
-
-  <div id="contact" class="main-content">
-    <h2>Contact</h2>
-    <p>Get in touch with us to learn more about how we can assist with your infrastructure planning needs.</p>
-  </div>
-
   <!-- Footer -->
   <div class="footer">
     &copy; 2025 2EH Consulting. All rights reserved.
@@ -140,4 +111,3 @@
 
 </body>
 </html>
-Changes:
