@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>2EH Consulting - Our Expertise</title>
+  <title>2EH Consulting - Home</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
     }
-
     .logo {
-      padding: 10px;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
-      z-index: 10;
+      padding: 10px;
+      background-color: white; /* Clean background for logo */
+      z-index: 1000; /* Logo always on top */
     }
-
     .logo img {
-      height: 120px;
+      height: 120px; /* Bigger logo like Our Expertise page */
     }
-
     .sidebar {
       position: fixed;
       top: 0;
@@ -34,156 +31,77 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 160px;
-      gap: 30px;
-      font-size: 20px;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      padding-top: 150px; /* Lower to match bigger logo */
+      gap: 40px;
+      font-size: 22px;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
     }
-
-    /* Sidebar Links */
     .sidebar a {
-      position: relative;
       color: black;
       text-decoration: none;
       font-weight: bold;
-      display: block;
-      padding-bottom: 5px; /* Space for underline */
+      position: relative; /* Needed for underline */
+      padding-bottom: 5px;
     }
-
-    /* Fancy Underline Effect */
     .sidebar a::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
-      bottom: -5px;
-      width: 100%;
+      bottom: 0;
+      width: 0%;
       height: 2px;
       background-color: black;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s ease;
+      transition: width 0.3s ease;
     }
-
-    /* Show the fancy underline on hover */
     .sidebar a:hover::after {
-      transform: scaleX(1);
+      width: 100%;
     }
-
-    /* Keep underline active when hovering over the current page link */
-    .sidebar a.active::after {
-      transform: scaleX(1); /* Keep the underline visible on the active page */
-    }
-
-    /* Disable clicking on the active link but allow hover underline */
-    .sidebar a.active {
-      pointer-events: none; /* Prevent clicking on active link */
-    }
-
     .main-content {
       margin-right: 200px;
-      padding: 60px 40px 120px 40px;
+      padding: 40px;
+      padding-top: 160px; /* Space for logo */
     }
-
-    .expertise-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 80px;
-      gap: 60px;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 40px;
-    }
-
-    .expertise-text {
-      flex: 1;
-      font-size: 20px;
-    }
-
-    .expertise-title {
-      font-weight: bold;
-      margin-bottom: 15px;
-      font-size: 24px;
-    }
-
-    .expertise-image {
-      flex: 1;
-      max-width: 500px;
+    .full-width-image {
+      width: 100%;
       height: auto;
-      border-radius: 10px;
-      object-fit: cover;
+      margin-top: 40px;
     }
-
     .footer {
       background-color: black;
       color: white;
       text-align: center;
       padding: 20px 10px;
-      position: fixed;
+      position: relative;
       bottom: 0;
-      left: 0;
       width: 100%;
-    }
-
-    @media (max-width: 900px) {
-      .expertise-section {
-        flex-direction: column;
-        text-align: left;
-      }
-
-      .expertise-image {
-        width: 100%;
-      }
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
+  <!-- Logo on top left -->
   <div class="logo">
     <img src="image002.png" alt="2EH Consulting Logo">
   </div>
 
-  <!-- Sidebar -->
+  <!-- Sidebar Menu on Right -->
   <div class="sidebar">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="expertise.html" class="active">Our Expertise</a>
+    <a href="services.html">Our Expertise</a> <!-- CHANGED from 'Our Services' to 'Our Expertise' -->
     <a href="contact.html">Contact</a>
   </div>
 
   <!-- Main Content -->
   <div class="main-content">
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
-        We offer expert guidance in preparing, reviewing, and amending LGIPs, helping councils align infrastructure planning with legislative requirements and long-term growth strategies.
-      </div>
-      <img class="expertise-image" src="https://t4.ftcdn.net/jpg/02/31/49/17/360_F_231491757_NBjodhx0PrhOWbNTUZqgiaMIIzeTtao7.jpg" alt="LGIP Planning">
-    </div>
+    <h1>Welcome to 2EH Consulting</h1>
+    <p>
+      2EH Consulting is a boutique consultancy specialising in strategic infrastructure planning, LGIP preparation and review, urban growth modelling, and multidisciplinary project management for local governments.
+    </p>
 
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <div class="expertise-title">Infrastructure Charging and Policy Advisory:</div>
-        We provide strategic advice on infrastructure charging, financing, and policy development, optimizing funding approaches to support sustainable growth and community outcomes.
-      </div>
-      <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Policy Advisory">
-    </div>
-
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <div class="expertise-title">Urban Growth Modeling and Development Policy:</div>
-        Our advanced growth models and analytics tools equip councils with the insights needed to make informed decisions on land use, infrastructure investment, and urban development.
-      </div>
-      <img class="expertise-image" src="https://www.hashmicro.com/blog/wp-content/uploads/2022/10/Tools-16.jpg" alt="Urban Growth Modeling">
-    </div>
-
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <div class="expertise-title">Project Management of Multi-Disciplinary Initiatives:</div>
-        With a proven track record of managing complex projects, we deliver coordinated and impactful infrastructure strategies that drive long-term value.
-      </div>
-      <img class="expertise-image" src="https://s29814.pcdn.co/wp-content/uploads/2021/06/shutterstock_1175858854.jpg.optimal.jpg" alt="Project Management">
-    </div>
+    <!-- Full Width Image -->
+    <img class="full-width-image" src="https://goldcoastdaytour.com.au/wp-content/uploads/2024/09/Gold-Coast-City.jpg" alt="Gold Coast City">
   </div>
 
   <!-- Footer -->
