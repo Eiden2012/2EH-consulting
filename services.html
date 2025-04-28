@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -36,22 +37,20 @@
       padding-top: 160px;
       gap: 30px;
       font-size: 20px;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     }
 
+    /* Sidebar Links */
     .sidebar a {
+      position: relative;
       color: black;
       text-decoration: none;
       font-weight: bold;
-      position: relative;
+      display: block;
+      padding-bottom: 5px; /* Space for underline */
     }
 
-    /* Disable clicking on active page, but keep style the same */
-    .sidebar a.active {
-      pointer-events: none; /* can't click */
-    }
-
-    /* Fancy black underline for ALL links including active */
+    /* Fancy Underline Effect */
     .sidebar a::after {
       content: '';
       position: absolute;
@@ -65,8 +64,19 @@
       transition: transform 0.3s ease;
     }
 
+    /* Show the fancy underline on hover */
     .sidebar a:hover::after {
       transform: scaleX(1);
+    }
+
+    /* Keep underline active when hovering over the current page link */
+    .sidebar a.active::after {
+      transform: scaleX(1); /* Keep the underline visible on the active page */
+    }
+
+    /* Disable clicking on the active link but allow hover underline */
+    .sidebar a.active {
+      pointer-events: none; /* Prevent clicking on active link */
     }
 
     .main-content {
@@ -135,15 +145,14 @@
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
-    <a class="active">Our Expertise</a>
+    <a href="expertise.html" class="active">Our Expertise</a>
     <a href="contact.html">Contact</a>
   </div>
 
   <!-- Main Content -->
   <div class="main-content">
-
     <div class="expertise-section">
       <div class="expertise-text">
         <div class="expertise-title">Local Government Infrastructure Plans (LGIPs) and Strategic Planning:</div>
@@ -175,7 +184,6 @@
       </div>
       <img class="expertise-image" src="https://s29814.pcdn.co/wp-content/uploads/2021/06/shutterstock_1175858854.jpg.optimal.jpg" alt="Project Management">
     </div>
-
   </div>
 
   <!-- Footer -->
