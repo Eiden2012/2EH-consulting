@@ -46,13 +46,13 @@
       position: relative;
     }
 
+    /* Disable clicking on active page, but keep style the same */
     .sidebar a.active {
-      pointer-events: none; /* disables clicking */
-      color: gray; /* shows it's the current page */
+      pointer-events: none; /* can't click */
     }
 
-    /* Fancy black underline for hover effect on normal links */
-    .sidebar a:not(.active)::after {
+    /* Fancy black underline for ALL links including active */
+    .sidebar a::after {
       content: '';
       position: absolute;
       left: 0;
@@ -65,7 +65,7 @@
       transition: transform 0.3s ease;
     }
 
-    .sidebar a:not(.active):hover::after {
+    .sidebar a:hover::after {
       transform: scaleX(1);
     }
 
